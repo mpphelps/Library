@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>
+        Library
+    </h1>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Enter your book</legend>
+                <div>
+                    <input type="text" id="bookTitle" name="title" placeholder="Title...">
+                </div>
+                <div>
+                    <input type="text" id="bookAuthor" name="author" placeholder="Author..."> 
+                </div>
+                <div>
+                    <input type="number" id="bookPages" name="pages" placeholder="Pages...">
+                </div>
+                <div>
+                    <input type="radio" id="statusRead" name="status" value="Read">
+                    <label for="status">Read</label>
+                </div>
+                <div>
+                    <input type="radio" id="statusNotRead" name="status" value="not-read">
+                    <label for="not-read">Not Read</label>
+                </div>
+                <button type="button" id="submit-button">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        this is where i should display books added
+    </div>
+</body>
+</html>
