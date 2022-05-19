@@ -10,35 +10,43 @@
 </head>
 <body>
     <h1>
-        Library
+        LIBRARY PROJECT
     </h1>
-    <div>
+    <button type="button" id="addBookButton">Add Book</button>
+    <div id="border"></div>
+    <div id="popup">
         <form>
             <fieldset>
-                <legend>Enter your book</legend>
-                <div>
-                    <input type="text" id="bookTitle" name="title" placeholder="Title...">
+                <div id="popup-header">
+                    <legend>Enter your book</legend>
+                    <span id="cancel-button" style="font-family: sans-serif">X</span>
                 </div>
                 <div>
-                    <input type="text" id="bookAuthor" name="author" placeholder="Author..."> 
+                    <label for="bookTitle"></label>
+                    <input type="text" id="bookTitle" name="bookTitle" placeholder="Title..." maxlength="100">
                 </div>
                 <div>
-                    <input type="number" id="bookPages" name="pages" placeholder="Pages...">
+                    <label for="bookAuthor"></label>
+                    <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Author..." maxlength="100"> 
                 </div>
                 <div>
-                    <input type="radio" id="statusRead" name="status" value="Read">
-                    <label for="status">Read</label>
+                    <label for="bookPages"></label>
+                    <input type="number" id="bookPages" name="bookPages" placeholder="Pages..." max="100000">
                 </div>
                 <div>
-                    <input type="radio" id="statusNotRead" name="status" value="not-read">
-                    <label for="not-read">Not Read</label>
+                    <label for="statusRead">Read</label>
+                    <input type="checkbox" id="statusRead" name="statusRead" value="Read">
                 </div>
-                <button type="button" id="submit-button">Submit</button>
+                <button type="button" id="submit-button">Add</button>
+                
             </fieldset>
         </form>
+
+        
+
     </div>
-    <div>
-        this is where i should display books added
+    <div class="library-area">
+        
     </div>
 </body>
 </html>
