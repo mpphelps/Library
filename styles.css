@@ -2,22 +2,22 @@
 
 
 :root {
-    --book-background-color: #313530;
+    --page-background-color: #dcbe87;
+    --book-background-color: #4e1d04;
+    --book-shadow-color: #ad6a34;
     --book-text-color: #dde7db;
-    --library-color: #36020f;
-    --dark-green: #325453;
-    --light-green: #517174;
-    --coral: #ef5d58;
-    --sand: #dcbe87;
-    --light-brown: #ad6a34;
-    --dark-brown: #4e1d04;
+    --library-color: #325453;
+    --library-shade-color: #517174;
+    --book-border-color: #ef5d58;
+    --book-border-shade-color: #4e1d04;
+
 }
 
 body {
     justify-content: center;
     font-family: Roboto;
     font-weight: bold;
-    background-color: #dbe0eb;
+    background-color: var(--page-background-color);
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +32,7 @@ h1 {
 #border {
     margin-top: 10px;
     margin-bottom: 10px;
-    border-top: 8px solid #bbb;
+    border-top: 8px solid var(--book-border-shade-color);
     border-radius: 5px;
 }
 
@@ -69,10 +69,10 @@ fieldset {
     transform: translate(-50%, -50%);
     background-color: var(--library-color);
     color: var(--book-text-color);
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-radius: 5%;
-    box-shadow: -3px -3px teal;
+    box-shadow: -3px -3px var(--book-shadow-color);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -102,7 +102,7 @@ fieldset {
 
 .book {
     background-color: var(--book-background-color);
-    box-shadow: -3px -3px teal;
+    box-shadow: -3px -3px var(--book-shadow-color);
     width: 200px;
     border-color: #000000;
     color: var(--book-text-color);
