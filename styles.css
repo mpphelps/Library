@@ -5,6 +5,12 @@
     --book-background-color: #313530;
     --book-text-color: #dde7db;
     --library-color: #36020f;
+    --dark-green: #325453;
+    --light-green: #517174;
+    --coral: #ef5d58;
+    --sand: #dcbe87;
+    --light-brown: #ad6a34;
+    --dark-brown: #4e1d04;
 }
 
 body {
@@ -28,7 +34,7 @@ h1 {
     margin-bottom: 10px;
     border-top: 8px solid #bbb;
     border-radius: 5px;
-  }
+}
 
 button {
     border-color: black;
@@ -37,8 +43,6 @@ button {
     border-width: 2px;
     font-size: large;
 }
-
-
 
 input {
     font-size: large;
@@ -56,11 +60,6 @@ fieldset {
 #addBookButton {
     width: fit-content;
     align-self: center;
-}
-
-.show {
-    pointer-events: auto;
-    opacity: 1;
 }
 
 .popup {
