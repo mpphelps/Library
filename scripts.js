@@ -2,7 +2,7 @@ let myLibrary = [];
 
 libraryArea = document.querySelector(".library-area");
 addBookButton = document.querySelector('#addBookButton');
-bookForm = document.querySelector("#popup");
+bookForm = document.querySelector(".popup");
 submitButton = document.querySelector("#submit-button");
 cancelButton = document.querySelector("#cancel-button");
 
@@ -21,7 +21,8 @@ function Book(index, title, author, pages, read) {
 }
 
 function displayForm(){
-    bookForm.style.setProperty("display", "block");
+    bookForm.classList.add('show');
+    //bookForm.style.setProperty("display", "block");
 }
 
 function addBookToLibrary(e) {
@@ -65,7 +66,7 @@ function clearForm(e) {
     bookTitle.value = "";
     bookAuthor.value = "";
     bookPages.value = 0;
-    bookForm.style.setProperty("display", "none");
+    bookForm.classList.remove('show');
 }
 
 function toggleRead(e) {

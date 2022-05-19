@@ -58,8 +58,12 @@ fieldset {
     align-self: center;
 }
 
-#popup {
-    display: none;
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.popup {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -70,10 +74,17 @@ fieldset {
     border-width: 1px;
     border-radius: 5%;
     box-shadow: -3px -3px teal;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
+.popup.show {
+    pointer-events: auto;
+    opacity: 1;
+}
 
-#popup-header {
+.popup-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
